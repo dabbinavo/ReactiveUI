@@ -236,8 +236,6 @@ namespace ReactiveUI
         [System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Member info access requires dynamic code generation")]
         [System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Member info access may reference members that could be trimmed")]
         public static System.Reflection.MemberInfo? GetMemberInfo(this System.Linq.Expressions.Expression expression) { }
-        [System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Expression analysis requires dynamic code generation")]
-        [System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Expression analysis may reference members that could be trimmed")]
         public static System.Linq.Expressions.Expression? GetParent(this System.Linq.Expressions.Expression expression) { }
     }
     public interface IActivatableView { }
