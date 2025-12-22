@@ -121,10 +121,6 @@ public static class ExpressionMixins
     /// </summary>
     /// <param name="expression">The expression.</param>
     /// <returns>The parent expression.</returns>
-#if NET6_0_OR_GREATER
-    [RequiresDynamicCode("Expression analysis requires dynamic code generation")]
-    [RequiresUnreferencedCode("Expression analysis may reference members that could be trimmed")]
-#endif
     public static Expression? GetParent(this Expression expression) // TODO: Create Test
     {
         expression.ArgumentNullExceptionThrowIfNull(nameof(expression));
